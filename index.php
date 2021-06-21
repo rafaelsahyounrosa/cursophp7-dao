@@ -18,7 +18,24 @@ echo json_encode($lista);
 
 
 //Carrega user usando o login e a senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("root", "123");
+echo $usuario;
+*/
+/*
+$aluno = new Usuario("rafael", "!123ds");
+$aluno->insert();
+
+echo $aluno;
+*/
+/*
+$usuario = new Usuario();
+$usuario->loadById(2);
+$usuario->update("professor", "abc");
+echo $usuario;
+*/
+$usuario = new Usuario();
+$usuario->loadById(2);
+$usuario->delete();
 echo $usuario;
 ?>
